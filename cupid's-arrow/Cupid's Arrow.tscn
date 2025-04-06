@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://c5l7yc4wm0md3"]
+[gd_scene load_steps=3 format=3 uid="uid://c5l7yc4wm0md3"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://bmwosrfayytx6" path="res://Untitled_Artwork(8).jpg" id="1_hqoko"]
+[ext_resource type="Texture2D" uid="uid://djj5xocfasvw0" path="res://Untitled_Artwork(13).png" id="2_ypebh"]
+
+[node name="Map" type="Node2D"]
+
+[node name="Pink Level" type="Sprite2D" parent="."]
+position = Vector2(1023, 1028)
+texture = ExtResource("1_hqoko")
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(1029, 1023)
+texture = ExtResource("2_ypebh")
