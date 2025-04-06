@@ -1,21 +1,35 @@
-[gd_scene load_steps=6 format=3 uid="uid://c5l7yc4wm0md3"]
+[gd_scene load_steps=13 format=3 uid="uid://c5l7yc4wm0md3"]
 
 [ext_resource type="Texture2D" uid="uid://bmwosrfayytx6" path="res://Untitled_Artwork(8).jpg" id="1_hqoko"]
 [ext_resource type="Texture2D" uid="uid://caxav73vnelqk" path="res://Untitled_Artwork(11).jpg" id="2_84b5k"]
 [ext_resource type="Script" path="res://player.gd" id="2_hdsrq"]
 [ext_resource type="Texture2D" uid="uid://djj5xocfasvw0" path="res://Untitled_Artwork(13).png" id="2_ypebh"]
+[ext_resource type="Texture2D" uid="uid://bwx4m5840v3ax" path="res://Untitled_Artwork(14).png" id="3_cfs3f"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3atw8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5r5o3"]
+size = Vector2(148, 832.563)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xnm3f"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sa6hr"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_er5gp"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_yl03g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_24o0o"]
-size = Vector2(425, 289)
+size = Vector2(310.5, 275.5)
 
 [node name="Map" type="Node2D"]
 
 [node name="Pink Level" type="Sprite2D" parent="."]
-position = Vector2(1023, 1035)
+position = Vector2(1023, 1027)
 texture = ExtResource("1_hqoko")
 
 [node name="Camera2D" type="Camera2D" parent="Pink Level"]
-position = Vector2(6, -3)
+position = Vector2(6, 69)
 scale = Vector2(110.803, -0.356613)
 zoom = Vector2(0.5, 0.5)
 
@@ -25,6 +39,97 @@ z_index = -1
 scale = Vector2(2, 2)
 texture = ExtResource("2_84b5k")
 
+[node name="RigidBody2D" type="RigidBody2D" parent="Pink Level"]
+position = Vector2(-4, 7)
+mass = 0.001
+physics_material_override = SubResource("PhysicsMaterial_3atw8")
+gravity_scale = 0.0
+lock_rotation = true
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pink Level/RigidBody2D"]
+position = Vector2(-943, -574)
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Pink Level/RigidBody2D"]
+position = Vector2(-606, -944)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="Barrier" type="Sprite2D" parent="Pink Level/RigidBody2D"]
+material = SubResource("CanvasItemMaterial_xnm3f")
+position = Vector2(0, -7)
+texture = ExtResource("3_cfs3f")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="Pink Level"]
+position = Vector2(9, 47)
+rotation = 1.5708
+physics_material_override = SubResource("PhysicsMaterial_sa6hr")
+gravity_scale = 0.0
+lock_rotation = true
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pink Level/RigidBody2D2"]
+position = Vector2(-986, -596)
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Pink Level/RigidBody2D2"]
+position = Vector2(-610, -940)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="Barrier2" type="Sprite2D" parent="Pink Level/RigidBody2D2"]
+material = SubResource("CanvasItemMaterial_xnm3f")
+position = Vector2(-47, 12.9999)
+rotation = -1.5708
+texture = ExtResource("3_cfs3f")
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="Pink Level"]
+position = Vector2(-31, 7)
+rotation = -3.14159
+physics_material_override = SubResource("PhysicsMaterial_er5gp")
+gravity_scale = 0.0
+lock_rotation = true
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pink Level/RigidBody2D3"]
+position = Vector2(-978, -603.281)
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Pink Level/RigidBody2D3"]
+position = Vector2(-623, -953)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="Barrier3" type="Sprite2D" parent="Pink Level/RigidBody2D3"]
+material = SubResource("CanvasItemMaterial_xnm3f")
+position = Vector2(-27.0001, 7)
+rotation = 3.14159
+texture = ExtResource("3_cfs3f")
+
+[node name="RigidBody2D4" type="RigidBody2D" parent="Pink Level"]
+position = Vector2(6, -17)
+rotation = -1.5708
+physics_material_override = SubResource("PhysicsMaterial_yl03g")
+gravity_scale = 0.0
+lock_rotation = true
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pink Level/RigidBody2D4"]
+position = Vector2(-975, -622)
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Pink Level/RigidBody2D4"]
+position = Vector2(-626, -951)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_5r5o3")
+
+[node name="Barrier4" type="Sprite2D" parent="Pink Level/RigidBody2D4"]
+material = SubResource("CanvasItemMaterial_xnm3f")
+position = Vector2(-17, -9.99994)
+rotation = 1.5708
+texture = ExtResource("3_cfs3f")
+
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("2_hdsrq")
 
@@ -33,5 +138,5 @@ position = Vector2(1023, 1023)
 texture = ExtResource("2_ypebh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(1112, 1009)
+position = Vector2(1054.75, 1015.75)
 shape = SubResource("RectangleShape2D_24o0o")
