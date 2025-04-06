@@ -16,3 +16,14 @@ func _process(delta):
 	velocity = lerp(velocity, playerInput * SPEED, delta * ACCEL)
 	
 	move_and_slide()
+	
+var score = 0
+
+var score_label
+func _ready():
+	score_label = get_parent().get_node("Label")
+	score = 0
+
+func _physics_process(delta):
+	var velocity = Vector2()
+	score_label.text = "Score: " + str(score)

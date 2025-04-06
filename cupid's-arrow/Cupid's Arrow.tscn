@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://c5l7yc4wm0md3"]
+[gd_scene load_steps=14 format=3 uid="uid://c5l7yc4wm0md3"]
 
 [ext_resource type="Texture2D" uid="uid://bmwosrfayytx6" path="res://Untitled_Artwork(8).jpg" id="1_hqoko"]
 [ext_resource type="Texture2D" uid="uid://caxav73vnelqk" path="res://Untitled_Artwork(11).jpg" id="2_84b5k"]
 [ext_resource type="Script" path="res://player.gd" id="2_hdsrq"]
 [ext_resource type="Texture2D" uid="uid://djj5xocfasvw0" path="res://Untitled_Artwork(13).png" id="2_ypebh"]
 [ext_resource type="Texture2D" uid="uid://bwx4m5840v3ax" path="res://Untitled_Artwork(14).png" id="3_cfs3f"]
+[ext_resource type="Script" path="res://scoring_system.gd" id="6_igfje"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3atw8"]
 
@@ -140,3 +141,14 @@ texture = ExtResource("2_ypebh")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(1054.75, 1015.75)
 shape = SubResource("RectangleShape2D_24o0o")
+
+[node name="Scoring System" type="Node2D" parent="Player"]
+script = ExtResource("6_igfje")
+
+[node name="Label" type="Label" parent="Player"]
+offset_left = -795.0
+offset_top = 86.0
+offset_right = 79.0
+offset_bottom = 1104.0
+theme_override_font_sizes/font_size = 100
+text = "Score:"
