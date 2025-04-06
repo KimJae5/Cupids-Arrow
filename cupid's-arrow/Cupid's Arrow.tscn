@@ -1,16 +1,37 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5l7yc4wm0md3"]
+[gd_scene load_steps=6 format=3 uid="uid://c5l7yc4wm0md3"]
 
 [ext_resource type="Texture2D" uid="uid://bmwosrfayytx6" path="res://Untitled_Artwork(8).jpg" id="1_hqoko"]
+[ext_resource type="Texture2D" uid="uid://caxav73vnelqk" path="res://Untitled_Artwork(11).jpg" id="2_84b5k"]
+[ext_resource type="Script" path="res://player.gd" id="2_hdsrq"]
 [ext_resource type="Texture2D" uid="uid://djj5xocfasvw0" path="res://Untitled_Artwork(13).png" id="2_ypebh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_24o0o"]
+size = Vector2(425, 289)
 
 [node name="Map" type="Node2D"]
 
 [node name="Pink Level" type="Sprite2D" parent="."]
-position = Vector2(1023, 1028)
+position = Vector2(1023, 1035)
 texture = ExtResource("1_hqoko")
 
-[node name="Player" type="Node2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="Pink Level"]
+position = Vector2(6, -3)
+scale = Vector2(110.803, -0.356613)
+zoom = Vector2(0.5, 0.5)
 
-[node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(1029, 1023)
+[node name="Sprite2D" type="Sprite2D" parent="Pink Level"]
+modulate = Color(0.47788, 0.47788, 0.47788, 1)
+z_index = -1
+scale = Vector2(2, 2)
+texture = ExtResource("2_84b5k")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("2_hdsrq")
+
+[node name="Player CD" type="Sprite2D" parent="Player"]
+position = Vector2(1023, 1023)
 texture = ExtResource("2_ypebh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(1112, 1009)
+shape = SubResource("RectangleShape2D_24o0o")
