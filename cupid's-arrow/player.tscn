@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://m77p2abufxju"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_caycg"]
+
+[node name="Player" type="CharacterBody2D"]
+light_mask = 2
+position = Vector2(-1062, -1002)
+scale = Vector2(2, 2)
+script = ExtResource("1_caycg")

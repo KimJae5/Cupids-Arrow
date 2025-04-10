@@ -8,7 +8,7 @@ func _ready():
 	score_label = get_parent().get_node("Label")
 	score = 0
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var velocity = Vector2()
   
 

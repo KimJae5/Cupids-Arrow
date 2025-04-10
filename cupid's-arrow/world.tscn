@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://r8x6hrnw22f3"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_sgjdu"]
+[ext_resource type="PackedScene" uid="uid://w58v8ori5bxw" path="res://enemy.tscn" id="2_dt33t"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_sgjdu")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="Enemy" parent="." instance=ExtResource("2_dt33t")]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://chbskref0gkls"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_4crbs"]
+[ext_resource type="Texture2D" uid="uid://bwf0egw7au0wq" path="res://vecteezy_red-heart-shape-icon-like-or-love-symbol-for-valentine-s_18842695.png" id="1_emh67"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mp7h5"]
+
+[node name="Area2D" type="Area2D"]
+visibility_layer = 5
+rotation = 0.00199351
+scale = Vector2(0.208, 0.208)
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_4crbs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 8
+visibility_layer = 8
+position = Vector2(-0.00958417, -4.80768)
+scale = Vector2(4.69695, 4.59757)
+shape = SubResource("CircleShape2D_mp7h5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.31344e-06, -15.024)
+rotation = 3.14159
+scale = Vector2(0.015, 0.0209313)
+texture = ExtResource("1_emh67")
+
+[connection signal="body_entered" from="." to="." method="_on_bullet_body_entered"]
