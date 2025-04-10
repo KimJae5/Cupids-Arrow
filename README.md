@@ -18,18 +18,24 @@ CLASSES AND ASSETS:
 ------------------------------
 | Class/Asset | Source |
 |-----:|---------------|
-|bullet.gd |Modified from reference |
-|bullet_manager.gd |Modified from Reference |
-|enemy.gd|From reference |
-|enemy_spawner.gd |Modified from reference |
-|main.gd | From reference|
-|player.gd| Modified from reference|
+|bullet.gd | Modified from [reference](https://github.com/russs123/Prairie_King_Tut/blob/4f5917141c5cdedc6442281e9488fde3e3424a02/scenes/bullet.gd) |
+|bullet_manager.gd | Modified from [reference](https://github.com/russs123/Prairie_King_Tut/blob/4f5917141c5cdedc6442281e9488fde3e3424a02/scenes/BulletManager.gd) |
+|enemy.gd| From [reference](https://github.com/russs123/Prairie_King_Tut/blob/4f5917141c5cdedc6442281e9488fde3e3424a02/scenes/goblin.gd) |
+|enemy_spawner.gd |Modified from [reference](https://github.com/russs123/Prairie_King_Tut/blob/4f5917141c5cdedc6442281e9488fde3e3424a02/scenes/enemy_spawner.gd) |
+|main.gd | From reference |
+|player.gd| Modified from [reference](https://github.com/kobeDevStuff/2D-Procedurally-Generating-with-unloading/blob/main/player.gd) |
 
 REFERENCES:
 -------------------
+Coding for enemies, shooting, and enemy spawner: [Prairie_King_Tut](https://github.com/russs123/Prairie_King_Tut/tree/4f5917141c5cdedc6442281e9488fde3e3424a02/scenes).
+
+Coding for main and bullets: ChatGPT
+
+Coding for player movement: [KobeDev](https://github.com/kobeDevStuff/2D-Procedurally-Generating-with-unloading/tree/main)
 
 WHAT I LEARNED + MOST PROUD OF:
 ----------------------------
+From designing and working a lot with new coding with this project, I learnt how different coding worked and became more familiar and comfortable with working with it. I had spent a good amount of hours working on different parts of my game and with enough patience and slowly understanding the concept on how things worked, I was awarded with a fully functional game which I'm very proud of.
 
 GAME DESIGN DOCUMENT:
 ------------------------
@@ -39,9 +45,5 @@ VIDEOS:
 
 SCREENSHOTS:
 ---------------------
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="file:///C:/Users/jadel/OneDrive/Bilder/Screenshots/Screenshot%20(1).png">
- <source media="(prefers-color-scheme: light)" srcset="file:///C:/Users/jadel/OneDrive/Bilder/Screenshots/Screenshot%20(1).png">
- <img src="file:///C:/Users/jadel/OneDrive/Bilder/Screenshots/Screenshot%20(1).png">
-</picture>
+![Screenshot from Cupid's Arrow where you are being folllowed by the sad people](file:///C:/Users/jadel/OneDrive/Bilder/Screenshots/Screenshot%20(1).png)
 
