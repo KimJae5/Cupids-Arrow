@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://w58v8ori5bxw"]
+[gd_scene load_steps=6 format=3 uid="uid://w58v8ori5bxw"]
 
 [ext_resource type="Script" path="res://enemy.gd" id="1_22kj3"]
 [ext_resource type="Texture2D" uid="uid://b362fqi1j6o8t" path="res://Untitled_Artwork(15).png" id="2_pn1tp"]
 [ext_resource type="Texture2D" uid="uid://uubnbxqtmn31" path="res://Untitled_Artwork(16).png" id="3_ovp4b"]
+[ext_resource type="AudioStream" uid="uid://b53up71umfjcn" path="res://audiomass-output.mp3" id="4_nqtsb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fowca"]
 size = Vector2(78.2481, 78.5611)
@@ -34,3 +35,7 @@ offset_bottom = 140.0
 max_value = 15.0
 value = 15.0
 show_percentage = false
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_nqtsb")
+volume_db = -5.0
