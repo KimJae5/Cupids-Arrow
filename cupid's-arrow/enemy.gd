@@ -49,7 +49,7 @@ func die():
 	queue_free()
 
 func update_health_bar():
-	$TextureProgressBar.value = current_health
+	$ProgressBar.value = current_health
 	$Sprite2D.texture = normal_texture
 
 func show_critical_image():
