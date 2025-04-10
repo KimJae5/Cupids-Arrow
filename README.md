@@ -41,9 +41,18 @@ GAME DESIGN DOCUMENT:
 ------------------------
 
 VIDEOS:
-------------------------------
+-------------
+
+https://github.com/user-attachments/assets/1360a7de-d612-40dc-bc8c-da3e389178ee
+
+-----------------
 
 SCREENSHOTS:
 ---------------------
-![Screenshot from Cupid's Arrow where you are being folllowed by the sad people](file:///C:/Users/jadel/OneDrive/Bilder/Screenshots/Screenshot%20(1).png)
+![Screenshot (1)](https://github.com/user-attachments/assets/ebbc2a9b-82d8-4d88-a4bc-c1deebae31d5)
 
+![Screenshot 2025-04-10 201134](https://github.com/user-attachments/assets/1f64ffd2-25f1-4a8e-9f6d-e5d75625e00a)
+
+![Screenshot 2025-04-10 201254](https://github.com/user-attachments/assets/7e71f0d0-86dd-40c0-a5c9-392537815a32)
+
+![Screenshot 2025-04-10 201226](https://github.com/user-attachments/assets/7be3fdd1-d440-4268-9a93-91df50951f23)
