@@ -8,7 +8,7 @@
 [ext_resource type="Script" path="res://bullet_manager.gd" id="7_6iktn"]
 [ext_resource type="PackedScene" uid="uid://chbskref0gkls" path="res://bullet.tscn" id="8_cm8af"]
 [ext_resource type="PackedScene" uid="uid://cqiycxktksq84" path="res://enemy_spawner.tscn" id="9_4l8e0"]
-[ext_resource type="Script" path="res://score.gd" id="9_anxsf"]
+[ext_resource type="PackedScene" uid="uid://cejbdf1vknikd" path="res://main.tscn" id="9_c5vla"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3atw8"]
 
@@ -156,7 +156,6 @@ position = Vector2(-12.5, -18.5001)
 scale = Vector2(0.392822, 0.392822)
 texture = ExtResource("2_ypebh")
 
-[node name="Score" type="Node2D" parent="."]
-script = ExtResource("9_anxsf")
+[node name="Main" parent="." instance=ExtResource("9_c5vla")]
 
 [connection signal="player_shoot" from="Player" to="BulletManager" method="_on_player_player_shoot"]
