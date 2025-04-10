@@ -38,7 +38,10 @@ WHAT I LEARNED + MOST PROUD OF:
 From designing and working a lot with new coding with this project, I learnt how different coding worked and became more familiar and comfortable with working with it. I had spent a good amount of hours working on different parts of my game and with enough patience and slowly understanding the concept on how things worked, I was awarded with a fully functional game which I'm very proud of.
 
 GAME DESIGN DOCUMENT:
-------------------------
+----------
+![GDD](https://github.com/user-attachments/assets/290e3b61-e657-44c5-8068-24c063c6a5ad)
+
+The game is a simple in terms of mechanics, as you go around shooting the enemy and they follow after you. Their only goal is to follow the player until they are inevitably shot out of existence. The enemy have a health bar below them, so you know how much helath they have before they are gone. And for my game, I wanted to add a 2nd frame, so that once you get the enemy down to a specific amount of health (they have 15 health max and the number that triggers this 2nd frame is 3 health points), so that the appearance of the enemy changes from dull and depressing to happy and almost jolly. For sound effects in my game, the bullet has a sound that is triggered once you click your mouse, the enemies have a sound effect that plays once the 2nd frame is active. Then the background has some soft, lofi music to create a relaxing and calm atmosphere. 
 
 VIDEOS:
 -------------
