@@ -31,6 +31,12 @@ REFERENCES:
 WHAT I LEARNED + MOST PROUD OF:
 ----------------------------
 
+GAME DESIGN DOCUMENT:
+------------------------
+
+VIDEOS:
+------------------------------
+
 SCREENSHOTS:
 ---------------------
 <picture>
