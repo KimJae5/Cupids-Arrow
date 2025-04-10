@@ -45,7 +45,6 @@ func take_damage(amount: int):
 		die()
 		
 func die():
-	# Play animation, sound, particles, etc. here if you want
 	queue_free()
 
 func update_health_bar():

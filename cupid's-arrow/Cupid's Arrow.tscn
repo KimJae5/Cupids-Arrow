@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c5l7yc4wm0md3"]
+[gd_scene load_steps=17 format=3 uid="uid://c5l7yc4wm0md3"]
 
 [ext_resource type="Texture2D" uid="uid://bmwosrfayytx6" path="res://Untitled_Artwork(8).jpg" id="1_hqoko"]
 [ext_resource type="Texture2D" uid="uid://caxav73vnelqk" path="res://Untitled_Artwork(11).jpg" id="2_84b5k"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://bullet_manager.gd" id="7_6iktn"]
 [ext_resource type="PackedScene" uid="uid://chbskref0gkls" path="res://bullet.tscn" id="8_cm8af"]
 [ext_resource type="PackedScene" uid="uid://cqiycxktksq84" path="res://enemy_spawner.tscn" id="9_4l8e0"]
+[ext_resource type="Script" path="res://score.gd" id="9_anxsf"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3atw8"]
 
@@ -154,5 +155,8 @@ shape = SubResource("RectangleShape2D_crsvw")
 position = Vector2(-12.5, -18.5001)
 scale = Vector2(0.392822, 0.392822)
 texture = ExtResource("2_ypebh")
+
+[node name="Score" type="Node2D" parent="."]
+script = ExtResource("9_anxsf")
 
 [connection signal="player_shoot" from="Player" to="BulletManager" method="_on_player_player_shoot"]
